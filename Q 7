@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int a; int even=0; int odd=0;
+	cout << "Enter a number!" << endl;
+	cin >> a;
+	for (int i = 0; i <= a; i++)
+	{
+		if (i % 2 == 0)
+			even = i;
+		else
+			odd=i;
+	}
+	cout << "Even numbers: ";
+	for (int z = 0; z < even; z+=2)
+		cout << z << ",";
+	cout << "and " << even << ".";
+	cout << endl;
+	cout << "Odd numbers: ";
+	for (int z = 1; z < odd; z+=2)
+		cout << z << ",";
+	cout << "and " << odd
+		<< ".";
+}
