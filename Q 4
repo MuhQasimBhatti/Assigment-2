@@ -1,0 +1,32 @@
+// Fibocanci series
+// 0,1,1,2,3,5,8,13
+// ..... sum=a+b
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a = 0;
+	int d = 0;
+	int b = 1;
+	int sum = 0;
+	int x;
+	double long* arr = new double long[d];
+	cout << "Enter a number ";
+	cin >> x;
+
+	while (a < x)
+	{
+		cout << a << ",";
+		arr[d] = a;
+		sum = a + b;
+		a = b;
+		b = sum;
+		d = d + 1;
+
+	}
+	
+	cout << endl;
+	cout << "Reverse fibonacci series :" << endl;
+	for (int y = d - 1; y >= 0; y--)
+		cout << arr[y] << ",";
+}
