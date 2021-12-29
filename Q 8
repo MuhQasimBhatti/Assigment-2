@@ -1,0 +1,21 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a;
+	float prod = 1;
+	cout << "Write a postive integer less than 10 " << endl;
+	cin >> a;
+	if (a > 10 || a < 0)
+		cout << "Invalid number!" << endl;
+	else
+	{
+		for (int z = 1; z <= a; z++)
+		{
+			prod = prod * z;
+		}
+		cout <<a<<"!="<< prod;
+	}
+}
