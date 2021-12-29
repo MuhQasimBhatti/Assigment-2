@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int x,y;
+	cout << "Please enter two values" << endl;
+	cin >> x >> y;
+	if (x < y)
+	{
+		cout << "The integers between " << x << " and " << y << " are  ";
+		for (int z = x + 1; z < y - 1; z++)
+			cout << z << ",";
+		cout << " and " << y - 1;
+	}
+	else
+		if (x > y)
+		{		cout << "The integers between " << y << " and " << x << " are  ";
+		for (int z = y + 1; z < x - 1; z++)
+			cout << z << ",";
+		cout << " and " << x - 1;
+	}
+	else
+		cout << "There is no integer between " << x << " and " << y << "." << endl;
+}
