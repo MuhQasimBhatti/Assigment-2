@@ -1,12 +1,12 @@
 #include<iostream>
 using namespace std;
 int main() {
-	int y=0;
-	int x=0;
-	int a=0;
+	int y = 0;
+	int x = 0;
+	int a = 0;
 	int min = 0;
 	int Entries = 0;
-	long * arr = new long[Entries];
+	long* arr = new long[Entries];
 
 	cout << "enter numbers" << endl;
 	while (x < 9999)
@@ -16,12 +16,10 @@ int main() {
 		Entries++;
 	}
 	
-	for (int z = 0; z < Entries; z++)
-		for (int i = z + 1; i < Entries; i++)
-			if (arr[z] < arr[i])
-			{
-				 y = arr[z];
-				
-			}
+	y = arr[0];
+	for (int i = 0; i < Entries; i++)
+		if (y > arr[Entries])
+			y = arr[Entries];
 	cout << y;
+
 }
