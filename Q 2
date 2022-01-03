@@ -1,9 +1,7 @@
 #include<iostream>
 using namespace std;
 int main() {
-	int y = 0;
 	int x = 0;
-	int a = 0;
 	int min = 0;
 	int Entries = 0;
 	long* arr = new long[Entries];
@@ -15,11 +13,10 @@ int main() {
 		arr[Entries] = x;
 		Entries++;
 	}
-	
-	y = arr[0];
-	for (int i = 0; i < Entries; i++)
-		if (y > arr[Entries])
-			y = arr[Entries];
-	cout << y;
+	min = arr[0];
+	for (int y = 0; y < Entries; y++)
+			if (min > arr[y])
+				min = arr[y];
+	cout <<"The smallest number is" << min ;
 
 }
